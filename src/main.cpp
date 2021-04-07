@@ -1,6 +1,6 @@
 #include <iostream>
+#include "src/gameloop.hpp"
 
 int main () {
-  std::cout << "hewwo world" << std::endl;
-
+  gameloop();
 }
