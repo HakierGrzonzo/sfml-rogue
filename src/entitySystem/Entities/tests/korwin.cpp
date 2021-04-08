@@ -1,5 +1,6 @@
 #include "korwin.hpp"
 #include "../../Components/Renderable/sprite/korwin/korwin.hpp"
+#include "../../../utils/funcs.hpp"
 
 namespace entity {
   namespace tests {
@@ -7,6 +8,7 @@ namespace entity {
       Initialize();
     }
     void korwin::Initialize() {
+      /*
       components.push_back(
           std::shared_ptr<component::Component>(
             dynamic_cast<component::Component*>(
@@ -18,6 +20,8 @@ namespace entity {
               )
             )
           );
+      */
+      add_component(korwin);
     }
   }
 }

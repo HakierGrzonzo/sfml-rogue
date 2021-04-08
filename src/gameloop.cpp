@@ -9,11 +9,10 @@
 void gameloop() {
   sf::RenderWindow window(sf::VideoMode(400, 400), "sfml plswrk");
   window.setVerticalSyncEnabled(true);
+
   entity::tests::korwin test(utils::Position(100, 100));
   auto korwinRenderer = test.GetComponent<component::Renderable>();
-  if (korwinRenderer == nullptr) {
-    throw std::runtime_error("korwin is null");
-  }
+
   int i = -200;
   while (window.isOpen()) {
     i++;
